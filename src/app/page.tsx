@@ -1,4 +1,5 @@
 import { AppSidebar } from "@/components/app-sidebar";
+import { TodoWrapper } from "@/components/todoWrapper";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -7,7 +8,6 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import {
   SidebarInset,
@@ -38,7 +38,7 @@ export default function Home() {
           </div>
         </header>
         <div>
-          <Input placeholder="+ Add a task" className="p-5 " />
+          <TodoWrapper />
         </div>
       </SidebarInset>
     </SidebarProvider>
