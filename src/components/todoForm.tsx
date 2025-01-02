@@ -14,13 +14,22 @@ export const TodoForm = () => {
   };
 
   return (
-    <form className="flex items-center" onSubmit={handleSubmit}>
-      <Input
-        className="w-4/5 p-5 ml-5"
-        placeholder="Write You're Task Here..."
-        onChange={handleChange}
-      />
-      <Button className="p-5">Add Your Task</Button>
-    </form>
+    <div>
+      <form className="flex items-center" onSubmit={handleSubmit}>
+        <Input
+          className="w-4/5 p-5 ml-5"
+          placeholder="Write You're Task Here..."
+          onChange={handleChange}
+        />
+        <Button className="p-5">Add Your Task</Button>
+      </form>
+      <ul className="mt-5">
+        {value !== "" ? (
+          <li className="bg-gray-200 p-5">{value}</li>
+        ) : (
+          <p className="text-center">No Task Added</p>
+        )}
+      </ul>
+    </div>
   );
 };
