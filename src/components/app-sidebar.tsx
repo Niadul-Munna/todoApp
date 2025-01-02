@@ -52,7 +52,7 @@ const data = {
   ],
   navMain: [
     {
-      title: "Playground",
+      title: "Upcoming",
       url: "#",
       icon: SquareTerminal,
       isActive: true,
