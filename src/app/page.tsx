@@ -1,5 +1,5 @@
 import { AppSidebar } from "@/components/app-sidebar";
-import { TodoWrapper } from "@/components/todoWrapper";
+import Todo from "@/components/TodoFeatures/todo";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -37,8 +37,8 @@ export default function Home() {
             </Breadcrumb>
           </div>
         </header>
-        <div>
-          <TodoWrapper />
+        <div className="mx-10 bg-slate-400 p-10 rounded-xl max-w-screen-sm">
+          <Todo />
         </div>
       </SidebarInset>
     </SidebarProvider>
