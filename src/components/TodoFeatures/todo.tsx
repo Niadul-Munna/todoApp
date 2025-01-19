@@ -1,15 +1,15 @@
 "use client";
-import React, { useRef, useState } from "react";
+import { useState } from "react";
 import { Button } from "../ui/button";
 import { LucideListTodo } from "lucide-react";
 import TodoList from "./todoList";
 
 const Todo = () => {
-  const inputRef = useRef<HTMLInputElement>();
+  const [display, setDisplay] = useState("Walk");
 
-  const add = () => {
-    const inputText = inputRef.current.value.trim();
-    console.log(inputText);
+  const add = (e) => {
+    setDisplay(e.preventDefault.value);
+    console.log(display);
   };
 
   return (
@@ -23,7 +23,7 @@ const Todo = () => {
       {/* --------input box------- */}
       <div className="flex items-center my-7 bg-gray-200 rounded-full">
         <input
-          ref={inputRef}
+          onChange={setDisplay}
           type="text"
           placeholder="Add Your Task"
           className="bg-transparent border-0 outline-none h-14 pl-6 pr-2 flex-1 placeholder:text-slate-600"
