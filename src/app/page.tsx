@@ -37,7 +37,7 @@ export default function Home() {
             </Breadcrumb>
           </div>
         </header>
-        <div className="mx-10 bg-slate-400 p-10 rounded-xl max-w-screen-sm">
+        <div className="mx-10 p-10 rounded-xl max-w-screen-lg">
           <Todo />
         </div>
       </SidebarInset>
