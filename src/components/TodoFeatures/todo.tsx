@@ -22,7 +22,7 @@ const Todo = () => {
           placeholder="Add Your Task"
           className="bg-transparent border-0 outline-none h-14 pl-6 pr-2 flex-1 placeholder:text-slate-600"
         />
-        <Button className="w-32 h-14 rounded-full text-lg font-medium bg-orange-600 hover:bg-orange-500 hover:text-xl">
+        <Button className="w-32 shadow-lg h-14 rounded-lg text-lg font-medium bg-orange-600 hover:bg-orange-500 hover:text-xl">
           Add +
         </Button>
       </div>
