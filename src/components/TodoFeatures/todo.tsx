@@ -16,7 +16,7 @@ const Todo = () => {
       </div>
 
       {/* --------input box------- */}
-      <div className="flex items-center my-7 bg-gray-200 rounded-full">
+      <div className="flex items-center my-7 bg-gray-200 rounded-lg">
         <input
           type="text"
           placeholder="Add Your Task"
