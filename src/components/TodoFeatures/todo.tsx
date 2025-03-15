@@ -5,8 +5,6 @@ import { LucideListTodo } from "lucide-react";
 import TodoList from "./todoList";
 
 const Todo = () => {
-  const [display, setDisplay] = useState("Walk");
-
   return (
     <>
       {/* --------Title------- */}
