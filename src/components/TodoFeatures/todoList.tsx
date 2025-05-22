@@ -1,4 +1,4 @@
-import { LucideCheck, LucideCheckCircle, LucideTrash } from "lucide-react";
+import { LucideCheckCircle, LucideTrash } from "lucide-react";
 import React from "react";
 
 interface TodoListProps {
